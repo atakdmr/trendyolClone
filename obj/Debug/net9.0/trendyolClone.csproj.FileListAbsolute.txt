@@ -668,7 +668,6 @@ C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\1zeledtu3k-kho1e
 C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\hqcjie8w0t-ptijmz2zn2.gz
 C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\swy4z7u7fc-6llte0vbvf.gz
 C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\mox9j3ahp0-c2cv407frn.gz
-C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\nncrwtqx84-g4h4z4tvrr.gz
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\bin\Debug\net9.0\appsettings.json
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\bin\Debug\net9.0\trendyolClone.staticwebassets.endpoints.json
@@ -895,3 +894,5 @@ C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\obj\Debug\net9.0\trendyolClone.pdb
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\obj\Debug\net9.0\trendyolClone.genruntimeconfig.cache
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\obj\Debug\net9.0\ref\trendyolClone.dll
 C:\Users\Lab1\Desktop\fotoEkle\trendyolClone\obj\Debug\net9.0\compressed\nncrwtqx84-q7fzuqr6qu.gz
+C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\trendyolClone.sourcelink.json
+C:\Users\Lab1\Desktop\trendyolClone\obj\Debug\net9.0\compressed\nncrwtqx84-q7fzuqr6qu.gz

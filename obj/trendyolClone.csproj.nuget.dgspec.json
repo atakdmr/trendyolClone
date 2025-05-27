@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\trendyolClone.csproj": {}
+    "C:\\Users\\Lab1\\Desktop\\trendyolClone\\trendyolClone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\trendyolClone.csproj": {
+    "C:\\Users\\Lab1\\Desktop\\trendyolClone\\trendyolClone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\trendyolClone.csproj",
+        "projectUniqueName": "C:\\Users\\Lab1\\Desktop\\trendyolClone\\trendyolClone.csproj",
         "projectName": "trendyolClone",
-        "projectPath": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\trendyolClone.csproj",
+        "projectPath": "C:\\Users\\Lab1\\Desktop\\trendyolClone\\trendyolClone.csproj",
         "packagesPath": "C:\\Users\\Lab1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\obj\\",
+        "outputPath": "C:\\Users\\Lab1\\Desktop\\trendyolClone\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1656,6 +1656,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\47fe1921-b38d-4ac5-bbf6-c4e824b76939.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4d93b7cb-581d-4dfa-bd02-904a4436776a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>trendyolClone</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/trendyolClone</BasePath>
+      <RelativePath>uploads/4d93b7cb-581d-4dfa-bd02-904a4436776a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ks3messz4w</Fingerprint>
+      <Integrity>TAVDZEyVTcTn6zdIwqvPxrWIDwny8CWfY4ekjI43wE4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4d93b7cb-581d-4dfa-bd02-904a4436776a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4dpynojc.kl1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>trendyolClone</SourceId>
@@ -1709,6 +1727,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\528424bf-1ab4-4aea-9b07-cd17ef26ad7e.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5bdd9337-b0b6-4173-835b-01edc2cc5067.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>trendyolClone</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/trendyolClone</BasePath>
+      <RelativePath>uploads/5bdd9337-b0b6-4173-835b-01edc2cc5067.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fznwwopmr6</Fingerprint>
+      <Integrity>lS5wGNHQYJ6LHDGFL5BoSM53M/vpXr61i0tQRqeMRu4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5bdd9337-b0b6-4173-835b-01edc2cc5067.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5f1df3a9-2488-4f42-82e7-b49acdcb044f.webp'))">
       <SourceType>Package</SourceType>
@@ -1799,6 +1835,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ad0fcf50-5dec-4b51-b607-2ddaaef49e5d.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b26a952c-2803-43a7-ab73-b9339a3b546a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>trendyolClone</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/trendyolClone</BasePath>
+      <RelativePath>uploads/b26a952c-2803-43a7-ab73-b9339a3b546a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ft2fjbwxmz</Fingerprint>
+      <Integrity>/QTfTwdh+1nt1r/OxwLwlRP63/yG/qluDCGUiseagNs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b26a952c-2803-43a7-ab73-b9339a3b546a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b4763978-4267-4ab8-91de-4caa1785136b.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>trendyolClone</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/trendyolClone</BasePath>
+      <RelativePath>uploads/b4763978-4267-4ab8-91de-4caa1785136b.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ckb9y86bla</Fingerprint>
+      <Integrity>NLtY+KS+epHOr6T30R3a4K1GqcUhVRD+s6tNXtgOEQo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b4763978-4267-4ab8-91de-4caa1785136b.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b7a80d8b-8900-4869-9704-9b6b348288fe.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>trendyolClone</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/trendyolClone</BasePath>
+      <RelativePath>uploads/b7a80d8b-8900-4869-9704-9b6b348288fe.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cyz4zuino1</Fingerprint>
+      <Integrity>BKrmyqHK0qRM61ewh5XfErchUlRUejpIOyzTy89AUPw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b7a80d8b-8900-4869-9704-9b6b348288fe.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\badccc7c-03a0-4c31-b774-cffba7bea174.jpg'))">
       <SourceType>Package</SourceType>
