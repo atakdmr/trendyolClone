@@ -1,0 +1,95 @@
+.container-box {
+    background: white;
+    border-radius: 16px;
+    border: 1.5px solid #f27a1a;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.back-btn {
+    background-color: #f27a1a;
+    color: white;
+}
+
+.back-btn:hover {
+    background-color: #d9680f;
+    color: white;
+}
+
+.save-btn {
+    background-color: #f27a1a;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #d9680f;
+}
+
+.save-btn i {
+    margin-right: 6px;
+}
+
+.section-title {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+    padding: 0px !important;
+}
+
+.form-switch .form-check-input {
+    width: 2.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 0;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #f27a1a;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+@media
+(max-width: 576px) {
+    .header h4 {
+        font-size: 1.2rem;
+    }
+
+    .container-box {
+        padding: 1.2rem;
+    }
+
+    .save-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-switch {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

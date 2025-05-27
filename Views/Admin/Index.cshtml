@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Admin";
+}
+
+<main class="table_container">
+    <!-- Dashboard Stats -->
+    @await Html.PartialAsync("Partials/Admin/_DashboardStats")
+
+    <!-- Recent Orders -->
+    @await Html.PartialAsync("Partials/Admin/_RecentOrders")
+</main>

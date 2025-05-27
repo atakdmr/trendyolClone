@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "Kategori Detayları";
+    Layout = "_Admin";
+}
+<!DOCTYPE html>
+<html lang="tr">
+@model Category
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol - Kategori</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/admin/category/details.css">
+    <link rel="stylesheet" href="~/css/admin/table.css">
+    <style>
+        .main_cnt {
+            margin-left: 250px !important;
+        }
+        .cnt {
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
+        .ty-breadcrumb, .ty-category-header{
+            margin-left: 280px !important;
+        }
+        @@media(max-width:768px){
+           .main_cnt {
+            margin-left: 0px !important;
+        }
+        .cnt {
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
+        .ty-breadcrumb, .ty-category-header{
+            margin-left: 0px !important;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- Breadcrumb -->
+    <div class="ty-breadcrumb mb-4">
+            <a asp-controller="Admin" asp-action="Index" id="home-link" class="text-trendyol text-decoration-none">Admin</a> <i class="bi bi-chevron-right"></i>
+            <a asp-controller="Category" asp-action="CategoryList" id="home-link" class="text-trendyol text-decoration-none">Category List</a> <i class="bi bi-chevron-right"></i>
+            <span id="category-name">Category Details</span>
+    </div>
+
+    <!-- Category Form -->
+    <div class="container">
+        <div class="ty-category-header d-flex align-items-center mb-3">
+            <div class="ty-category-icon">
+                <i class="bi bi-tag fs-3"></i>
+            </div>
+            <h1 class="ty-category-title fs-2 ms-2">Edit Category</h1>
+        </div>
+
+        <div class="row main_cnt">
+            <div class="cnt">
+                <div class="bg-white p-4 rounded shadow-sm brd">
+                    <form id="category-form" asp-controller="Category" asp-action="Details" method="post">
+                        <div class="ty-form-group">
+                            <label for="cat-id">Kategori ID:</label>
+                            <input type="text" id="cat-id" class="ty-form-control" asp-for="Id" readonly>
+                        </div>
+
+                        <div class="ty-form-group">
+                            <label for="cat-name">Kategori Adı:</label>
+                            <input type="text" id="cat-name" class="ty-form-control" asp-for="CategoryName" required>
+                        </div>
+
+                        <div class="ty-form-group">
+                            <label for="cat-url">Kategori URL:</label>
+                            <input type="text" id="cat-url" class="ty-form-control" asp-for="Url" required>
+                        </div>
+                        
+                        <div class="ty-form-group">
+                            <label for="cat-icon">Kategori Icon:</label>
+                            <input type="text" id="cat-icon" class="ty-form-control" asp-for="Icon" required>
+                        </div>
+
+
+                        <button type="submit" class="add-new-btn text-light fs-6 mt-4">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@model List<Product>
+<section class="mb-5">
+    <div class="row d-flex">
+        <div class="col-10">
+            <h2 class="section-title">Sana Özel Fırsatlar</h2>
+        </div>
+        <div class="col-2"><a asp-action="ProductList"
+                class="text-decoration-none text-trendyol fs-5 border-bottom">Tümünü Gör</a></div>
+    </div>
+
+    <div class="row">
+
+        @foreach (var p in Model)
+        {
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@p.Id">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="@p.FilePath" alt="Ürün 1" class="product-img">
+                            <button class="favorite-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="discount-badge">%40</div>
+                        </div>
+                        <div class="product-info">
+                            <a asp-controller="Home" asp-action="Details" asp-route-id="@p.Id"
+                                class="brand-name fs-3 text-decoration-none text-dark">@p.Name</a>
+                            <div class="product-name">@p.Description</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-count">(423)</span>
+                            </div>
+                            <div class="price-container">
+                                <div class="current-price">@p.Price₺</div>
+                                <div class="original-price">1.169 TL</div>
+                                <button class="add-to-cart-button ms-4"
+                                    style="background-color: #ff6000; color: white; border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+
+
+    </div>
+</section>

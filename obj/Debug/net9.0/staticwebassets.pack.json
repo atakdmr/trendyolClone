@@ -1,0 +1,493 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\category\\categorylist.css",
+      "PackagePath": "staticwebassets\\css\\admin\\category\\categorylist.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\category\\createcategory.css",
+      "PackagePath": "staticwebassets\\css\\admin\\category\\createcategory.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\category\\details.css",
+      "PackagePath": "staticwebassets\\css\\admin\\category\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\category\\detailscategory.css",
+      "PackagePath": "staticwebassets\\css\\admin\\category\\detailscategory.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\details.css",
+      "PackagePath": "staticwebassets\\css\\admin\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\admin\\table.css",
+      "PackagePath": "staticwebassets\\css\\admin\\table.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\home\\details.css",
+      "PackagePath": "staticwebassets\\css\\home\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\home\\home.css",
+      "PackagePath": "staticwebassets\\css\\home\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\css\\product\\product.css",
+      "PackagePath": "staticwebassets\\css\\product\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\campaign_pants.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\campaign_pants.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\campaign_shirt.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\campaign_shirt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\elektronik.webp",
+      "PackagePath": "staticwebassets\\img\\HomePage\\elektronik.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\erkek_giyim.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\erkek_giyim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\having_fun_friends_homepage.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\having_fun_friends_homepage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\kadin_giyim.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\kadin_giyim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\kozmetik.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\kozmetik.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\sport_homepage.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\sport_homepage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\summer_homepage.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\summer_homepage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\trendyol_app_homepage.png",
+      "PackagePath": "staticwebassets\\img\\HomePage\\trendyol_app_homepage.png"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\img\\HomePage\\winter_homepage.jpg",
+      "PackagePath": "staticwebassets\\img\\HomePage\\winter_homepage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\01523e66-f286-4956-a225-0ae0a6d8574f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\01523e66-f286-4956-a225-0ae0a6d8574f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\04dda35e-d930-4e48-b5a9-44e2aa5d6b8a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\04dda35e-d930-4e48-b5a9-44e2aa5d6b8a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\0ad3d712-204e-42ee-85a7-2ac3327d4e9c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0ad3d712-204e-42ee-85a7-2ac3327d4e9c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\0ebb482b-49b6-416d-806e-4483cb32deec.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0ebb482b-49b6-416d-806e-4483cb32deec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\1d6bd314-eacd-4d7a-bcc6-00e41ca9cac8.webp",
+      "PackagePath": "staticwebassets\\uploads\\1d6bd314-eacd-4d7a-bcc6-00e41ca9cac8.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\21be0bdc-cb0c-4aff-9eb5-a1bdff7f2189.jpg",
+      "PackagePath": "staticwebassets\\uploads\\21be0bdc-cb0c-4aff-9eb5-a1bdff7f2189.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\3995ca68-1add-44df-b20f-cf8942fca8e4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3995ca68-1add-44df-b20f-cf8942fca8e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\41841566-b67b-4887-b1d1-eeea56d72fea.jpg",
+      "PackagePath": "staticwebassets\\uploads\\41841566-b67b-4887-b1d1-eeea56d72fea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\47fe1921-b38d-4ac5-bbf6-c4e824b76939.webp",
+      "PackagePath": "staticwebassets\\uploads\\47fe1921-b38d-4ac5-bbf6-c4e824b76939.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\4dpynojc.kl1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4dpynojc.kl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\4ff91379-9e7b-4ef6-a7b7-7f93640b9467.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4ff91379-9e7b-4ef6-a7b7-7f93640b9467.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\528424bf-1ab4-4aea-9b07-cd17ef26ad7e.webp",
+      "PackagePath": "staticwebassets\\uploads\\528424bf-1ab4-4aea-9b07-cd17ef26ad7e.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\5f1df3a9-2488-4f42-82e7-b49acdcb044f.webp",
+      "PackagePath": "staticwebassets\\uploads\\5f1df3a9-2488-4f42-82e7-b49acdcb044f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\76d84541-eb0c-43e6-88ec-b66599d00a09.jpg",
+      "PackagePath": "staticwebassets\\uploads\\76d84541-eb0c-43e6-88ec-b66599d00a09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\8227960f-a203-43c3-b4aa-d53f4392fab8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8227960f-a203-43c3-b4aa-d53f4392fab8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\972ca3c1-ce88-4a37-8b34-3d667f6580f7.webp",
+      "PackagePath": "staticwebassets\\uploads\\972ca3c1-ce88-4a37-8b34-3d667f6580f7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\ad0fcf50-5dec-4b51-b607-2ddaaef49e5d.png",
+      "PackagePath": "staticwebassets\\uploads\\ad0fcf50-5dec-4b51-b607-2ddaaef49e5d.png"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\badccc7c-03a0-4c31-b774-cffba7bea174.jpg",
+      "PackagePath": "staticwebassets\\uploads\\badccc7c-03a0-4c31-b774-cffba7bea174.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\bf150e30-08db-40b2-b7e0-ee41d7595e75.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bf150e30-08db-40b2-b7e0-ee41d7595e75.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\c7e0b808-389d-4ab1-b8c9-7f157f365c79.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c7e0b808-389d-4ab1-b8c9-7f157f365c79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\c90ce738-29aa-404e-a9bd-dc3c48031665.webp",
+      "PackagePath": "staticwebassets\\uploads\\c90ce738-29aa-404e-a9bd-dc3c48031665.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\f28380e6-6d13-4be1-86fe-e4c32bd6e18a.webp",
+      "PackagePath": "staticwebassets\\uploads\\f28380e6-6d13-4be1-86fe-e4c32bd6e18a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\f2a59245-bb01-4463-9af3-418aa867d0f9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f2a59245-bb01-4463-9af3-418aa867d0f9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\fd460a6f-f45e-4dca-9c42-81b4f63a420c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fd460a6f-f45e-4dca-9c42-81b4f63a420c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image2.webp",
+      "PackagePath": "staticwebassets\\uploads\\image2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image4.webp",
+      "PackagePath": "staticwebassets\\uploads\\image4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\image5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\image6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image7.webp",
+      "PackagePath": "staticwebassets\\uploads\\image7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\image8.webp",
+      "PackagePath": "staticwebassets\\uploads\\image8.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\n2bzih5y.quu.jpg",
+      "PackagePath": "staticwebassets\\uploads\\n2bzih5y.quu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lab1\\Desktop\\fotoEkle\\trendyolClone\\wwwroot\\uploads\\nai00plq.nkv.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nai00plq.nkv.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.trendyolClone.props",
+      "PackagePath": "build\\trendyolClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.trendyolClone.props",
+      "PackagePath": "buildMultiTargeting\\trendyolClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.trendyolClone.props",
+      "PackagePath": "buildTransitive\\trendyolClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.trendyolClone.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.trendyolClone.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

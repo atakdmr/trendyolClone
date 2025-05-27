@@ -1,0 +1,90 @@
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "_Admin";
+}
+@model trendyolClone.Models.Product
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol Admin - Kategori Ekleme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/admin/category/createcategory.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container_p mt-5">
+        <div class="category-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="page-title col-sm-12">
+                    <i class="fas fa-folder-plus me-2" style="color: var(--trendyol-orange);"></i>
+                    New Product
+                </h2>
+            </div>
+            <div class="category-info">
+                <i class="fas fa-lightbulb me-2" style="color: var(--trendyol-orange);"></i>
+                Pr, müşterilerinizin ürünlerinizi daha kolay bulmasını sağlar. Anlaşılır isimler kullanın ve
+                benzer ürünleri aynı kategoride gruplandırın.
+            </div>
+
+            <form id="category-form" asp-controller="Product" asp-action="Create" method="post" enctype="multipart/form-data">
+
+
+                <div class="ty-form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" class="ty-form-control mb-4" name="Name" required>
+                </div>
+
+                <div class="ty-form-group">
+                    <label for="product-description">Description:</label>
+                    <input type="text" id="product-description" class="ty-form-control mb-4" name="Description"
+                        required>
+                </div>
+                <div class="ty-form-group">
+                    <label for="product-price">Price:</label>
+                    <input type="text" id="product-price" class="ty-form-control mb-4" name="Price" required pattern="[0-9]*">
+                </div>
+                <div class="ty-form-group">
+                    <label for="product-image">Image:</label>
+                    <input type="file" id="product-image" class="ty-form-control mb-4" name="Image">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label class="trendyol-switch">
+                                <input type="checkbox" checked name="Stock">
+                                <span class="trendyol-switch-slider"></span>
+                                <span class="trendyol-switch-label">Stock Status</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label class="trendyol-switch">
+                                <input type="checkbox" checked name="HomePage">
+                                <span class="trendyol-switch-slider"></span>
+                                <span class="trendyol-switch-label">Display On Home Page</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <select name="CategoryId" class="form-select w-100 mb-4" asp-items="ViewBag.Categories">
+                    <option value="">Choose Category</option>
+                </select>
+
+                <button type="submit" class="trendyol-btn">
+                    <i class="fas fa-plus-circle"></i> Add Product
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

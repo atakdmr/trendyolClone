@@ -1,0 +1,158 @@
+@{
+    ViewData["Title"] = "Kategori Detayları";
+    Layout = "_Admin";
+}
+<!DOCTYPE html>
+<html lang="tr">
+<style>
+    .form-select {
+        border: 1.5px solid var(--trendyol-border);
+        border-radius: 10px;
+        padding: 16px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        color: #333;
+    }
+</style>
+@model Product
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol - Product</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="~/css/admin/category/details.css">
+    <link rel="stylesheet" href="~/css/admin/category/createcategory.css">
+    <link rel="stylesheet" href="~/css/admin/table.css">
+    <style>
+        .main_cnt {
+            margin-left: 250px !important;
+        }
+
+        .cnt {
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
+
+        .ty-breadcrumb,
+        .ty-category-header {
+            margin-left: 280px !important;
+        }
+
+        @@media(max-width:768px) {
+            .main_cnt {
+                margin-left: 0px !important;
+            }
+
+            .cnt {
+                max-width: 900px !important;
+                margin: 0 auto !important;
+            }
+
+            .ty-breadcrumb,
+            .ty-category-header {
+                margin-left: 0px !important;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Breadcrumb -->
+    <div class="ty-breadcrumb mb-4">
+        <a asp-controller="Admin" asp-action="Index" id="home-link" class="text-trendyol text-decoration-none">Admin</a>
+        <i class="bi bi-chevron-right"></i>
+        <a asp-controller="Product" asp-action="ProductList" id="home-link"
+            class="text-trendyol text-decoration-none">Product List</a> <i class="bi bi-chevron-right"></i>
+        <span id="category-name">Product Details</span>
+    </div>
+
+    <!-- Category Form -->
+    <div class="container">
+        <div class="ty-category-header d-flex align-items-center mb-3">
+            <div class="ty-category-icon">
+                <i class="bi bi-tag fs-3"></i>
+            </div>
+            <h1 class="ty-category-title fs-2 ms-2">Edit Product</h1>
+        </div>
+
+        <div class="row main_cnt">
+            <div class="cnt">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <form id="category-form" asp-controller="Product" asp-action="Details" method="post"
+                        enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="ty-form-group">
+                            <label for="product-id">Product ID:</label>
+                            <input type="text" id="product-id" class="ty-form-control" asp-for="Id" readonly>
+                        </div>
+
+                        <div class="ty-form-group">
+                            <label for="product-name">Product Name:</label>
+                            <input type="text" id="product-name" class="ty-form-control" asp-for="Name" required>
+                        </div>
+
+                        <div class="ty-form-group">
+                            <label for="product-description">Product Description:</label>
+                            <textarea asp-for="Description" id="product-description" class="ty-form-control"
+                                style="min-height: 50px;"></textarea>
+                        </div>
+
+                        <div class="ty-form-group">
+                            <label for="product-price">Product Price:</label>
+                            <input type="text" id="product-price" class="ty-form-control" asp-for="Price" required>
+                        </div>
+                        <label for="product-image">Image:</label>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="ty-form-group">
+                                    @if (!string.IsNullOrEmpty(Model.FilePath))
+                                    {
+                                        <img src="@Model.FilePath" alt="image" width="120" class="mb-3">
+                                    }
+
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-12"> <input type="file" name="Image"></div>
+                        </div>
+
+
+                        <div class="form-row mt-3">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="trendyol-switch">
+                                        <input type="checkbox" asp-for="Stock">
+                                        <span class="trendyol-switch-slider"></span>
+                                        <span class="trendyol-switch-label">Stock Status</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="trendyol-switch">
+                                        <input type="checkbox" asp-for="HomePage">
+                                        <span class="trendyol-switch-slider"></span>
+                                        <span class="trendyol-switch-label">Display On Home Page</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <select name="CategoryId" class="form-select w-100 mb-4" asp-items="ViewBag.Categories" class="form-select">
+                            <option value="@Model.CategoryId">@Model.Category.CategoryName</option>
+                        </select>
+
+                        <button type="submit" class="add-new-btn text-light fs-6 mt-4">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

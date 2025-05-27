@@ -1,0 +1,143 @@
+@{
+    Layout = "_Admin";
+}
+@model List<Product>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Products</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/admin/table.css">
+    <link rel="stylesheet" href="~/css/admin/category/categorylist.css">
+    <style>
+        .breadcrumb {
+            margin-left: 250px !important;
+        }
+
+        @@media(max-width:768px) {
+            .breadcrumb {
+                margin-left: 0px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fs-5">
+            <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index"
+                    class="text-decoration-none text-trendyol ms-3">Admin</a></li>
+            <li class="breadcrumb-item active">Product List</li>
+        </ol>
+    </nav>
+    <div class="container_table_2 my-4 row">
+        <h2 class="header-title">Products</h2>
+        <div class="row mb-4 align-items-center justify-content-between">
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 mb-3">
+                <a asp-controller="Product" asp-action="Create" class="btn btn-primary add-new-btn w-100">
+                    <i class="fas fa-plus-circle me-2"></i>New Product
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-12 col-sm-12 mb-3 col-lg-12">
+                <select class="form-select">
+                    <option value="10">10 Product</option>
+                    <option value="25">25 Product</option>
+                    <option value="50">50 Product</option>
+                    <option value="100">100 Product</option>
+                </select>
+            </div>
+            <div class="search-box d-flex col-lg-12 col-md-12">
+                <form asp-controller="Product" asp-action="ProductList" method="get" class="d-flex flex-grow-1">
+                    <input type="text" class="form-control" name="q" id="searchInput"
+                        placeholder="Aradığınız ürün, kategori veya markayı yazınız">
+                    <button class="btn-add-to-cart">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="card category-table">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        <span class="text-muted"><span class="text-trendyol">Total: </span> <strong>5
+                                Product</strong></span>
+                    </div>
+                    <div class="col-6 text-end">
+                        <span class="text-muted"><span class="text-trendyol">Last Update: </span><strong>13 April
+                                2025</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" style="width: 60px">Image</th>
+                                <th scope="col">Id</th>
+                                <th scope="col" class="url-column">Ürün İsmi</th>
+                                <th scope="col " class="count-column ">Url</th>
+                                <th scope="col" class="icon-column">Fiyat</th>
+                                <th scope="col" class="">Stock Durumu</th>
+                                <th scope="col" class="">Ana Sayfa</th>
+                                <th scope="col" class=" actions-column">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <td><img src="@product.FilePath" width="60px" height="60px"></td>
+                                    <td>@product.Id</td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <span class="product-name">@product.Name</span>
+                                        </div>
+                                    </td>
+                                    <td class="url-column">/@product.Description</td>
+                                    <td class="count-column"><span class="badge-count">@product.Price</span></td>
+                                    <td class="text-center">@product.Stock</td>
+                                    <td class="text-center">@product.HomePage</td>
+
+                                    <td>
+                                        <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id"
+                                            class="btn btn-edit action-btn">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id"
+                                            class="btn btn-delete action-btn">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add hover effects for category icons
+        document.querySelectorAll('.cat-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function () {
+                this.classList.add('hovered');
+            });
+
+            icon.addEventListener('mouseleave', function () {
+                this.classList.remove('hovered');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+:root {
+    --primary: #ff5722;
+    --primary-light: #ff7a50;
+    --primary-dark: #e64a19;
+    --secondary: #607d8b;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-card {
+    border-radius: 12px;
+    border: 1.5px solid gray !important;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-accent {
+    width: 8px;
+    height: 100%;
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 87, 34, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.stat-change {
+    font-size: 14px;
+    color: var(--success);
+    font-weight: 500;
+}
+
+.card-content {
+    padding: 20px 20px 20px 28px;
+}
+
+.section-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.table-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.table-heading {
+    background-color: #f8f9fa;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.product-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-active {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #27ae60;
+}
+
+.status-pending {
+    background-color: rgba(243, 156, 18, 0.15);
+    color: #f39c12;
+}
+
+.status-outofstock {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+}
+
+.action-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 3px;
+    transition: all 0.2s;
+}
+
+.btn-view {
+    background-color: #3498db;
+}
+
+.btn-edit {
+    background-color: #2ecc71;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container .fa-search {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #aaa;
+}
+
+.search-input {
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-weight: 500;
+    border: 1px solid #ddd;
+}
+
+.dropdown-toggle::after {
+    margin-left: 10px;
+}
+
+.sku-text {
+    font-size: 12px;
+    color: #888;
+}
+
+.form-select {
+    border: 1.5px solid var(--trendyol-border);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <a asp-controller="Home" asp-action="Index" class="text-decoration-none fs-3"
+                style="color: var(--trendyol-orange);">Trendyol Lite</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="search-box d-flex mx-2 mx-lg-4">
+                <form asp-controller="Home" asp-action="ProductList" method="get" class="d-flex flex-grow-1">
+                    <input type="text" class="form-control" name="q" id="searchInput" 
+                        placeholder="Aradığınız ürün, kategori veya markayı yazınız">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-controller="Admin" asp-action="Index">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="nav-icon">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                            <span class="d-none d-lg-inline mt-1" style="font-size: 0.8rem;">Hesabim</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="nav-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <span class="d-none d-lg-inline mt-1" style="font-size: 0.8rem;">Favorilerim</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="nav-icon">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </div>
+                            <span class="d-none d-lg-inline mt-1" style="font-size: 0.8rem;">Sepetim</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

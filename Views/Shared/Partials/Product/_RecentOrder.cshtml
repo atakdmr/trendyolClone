@@ -1,0 +1,203 @@
+@model List<Product>
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Kategoriler</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/admin/table.css">
+    <style>
+        .trendyol-search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 5px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .trendyol-search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .trendyol-search-bar input:focus {
+            outline: none;
+            /* Remove default focus outline */
+            box-shadow: none;
+            /* Remove Bootstrap's blue shadow */
+        }
+
+        .trendyol-search-bar button {
+            background-color: #ff6000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .trendyol-search-bar button:hover {
+            background-color: #e05500;
+        }
+
+        .trendyol-search-bar:focus-within {
+            border: 1px solid #ff6000;
+            /* Updated to 1px orange border */
+            box-shadow: none;
+            /* Ensure no additional shadow */
+            transition: border 0.3s ease;
+        }
+
+        .form-select {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-select:hover,
+        .form-select:focus {
+            border-color: #ff6000;
+            box-shadow: 0 0 10px rgba(255, 96, 0, 0.5);
+        }
+
+        .form-select option {
+            background-color: #ffffff;
+            /* Trendyol orange background */
+            color: #222222;
+            /* White text */
+            padding: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .form-select option:hover {
+            background-color: #e05500;
+            /* Darker orange on hover */
+            color: #fff;
+        }
+
+        .flex-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_table_1 row" style="border: 2px solid orange;">
+        <h2 class=" header-title">Products</h2>
+        <div class="flex flex-row-reverse row align-items-center justify-content-between mb-4">
+            <div class="col-sm-12 col-md-12 col-lg-12 mb-4 mt-3">
+                <a asp-controller="Product" asp-action="Create"
+                    class="add-new-btn text-decoration-none text-light">
+                    <i class="fas fa-plus-circle me-2"></i>New product
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="flex-row">
+                    <select class="form-select">
+                        <option value="10">10 Save</option>
+                        <option value="25">25 Save</option>
+                        <option value="50">50 Save</option>
+                        <option value="100">100 Save</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-3 mb-3">
+                <form asp-controller="product" asp-action="productList" method="get">
+                    <div class="trendyol-search-bar">
+                        <input type="text" class="form-control" name="q" id="searchInput"
+                            placeholder="Search in products">
+                        <button class="btn" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="card product-table">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        <span class="text-muted"><span class="text-trendyol">There are: </span> <strong>5
+                                Products in Total</strong></span>
+                    </div>
+                    <div class="col-6 text-end">
+                        <span class="text-muted"><span class="text-trendyol">Last Update: </span><strong>13 April
+                                2025</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" style="width: 60px">Image</th>
+                                <th scope="col">Id</th>
+                                <th scope="col" class="url-column">Name</th>
+                                <th scope="col" class="icon-column">Price</th>
+                                <th scope="col" class="">Stock</th>
+                                <th scope="col" class="">Home Page</th>
+                                <th scope="col" class=" actions-column">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <td><img src="@product.FilePath" width="60px" height="60px"></td>
+                                    <td>@product.Id</td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <span class="product-name">@product.Name</span>
+                                        </div>
+                                    </td>
+                                    <td class="count-column"><span class="badge-count">@product.Price</span></td>
+                                    <td class="text-center">@product.Stock</td>
+                                    <td class="text-center">@product.HomePage</td>
+
+                                    <td>
+                                        <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id"
+                                            class="btn btn-edit action-btn">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id"
+                                            class="btn btn-delete action-btn">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a asp-controller="Product" asp-action="ProductList"
+                class="text-decoration-none text-trendyol text-end p-3">See All</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@model List<Category>
+    <style>
+        .category-menu {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .category-item {
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .category-icon {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .category-name {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #343a40;
+            text-decoration: none;
+        }
+
+        .category-name:hover {
+            text-decoration: underline;
+        }
+    </style>
+<div class="category-menu py-2">
+    <div class="container">
+        <div class="row flex-nowrap overflow-auto pb-1 c_m">
+                @foreach (var c in Model)
+                {
+                    <div class="col-auto">
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="@(c.Icon)"></i>
+                            </div>
+                            <a class="category-name" href="/products/@c.Url">@c.CategoryName</a>
+                        </div>
+                    </div>
+
+                }
+
+
+            </div>
+        </div>
+    </div>

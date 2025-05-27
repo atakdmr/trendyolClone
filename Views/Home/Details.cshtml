@@ -1,0 +1,466 @@
+@{
+    ViewData["Title"] = "Details";
+}
+@model Product
+<link rel="stylesheet" href="~/css//home/details.css" />
+
+<body>
+    <div class="container product-container py-4 px-4">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="product-image-container image-zoom-container text-center">
+                    <img src="@Model.FilePath" alt="Ürün Görseli" class="img-fluid product.image"
+                        id="mai.image">
+                </div>
+                <div class="thumbnail-container thumbnail-animation">
+                    <img src="@Model.FilePath" alt="Thumbnail 1" class="thumbnail active"
+                        data-src="@Model.FilePath">
+                    <img src="@Model.FilePath" alt="Thumbnail 2" class="thumbnail"
+                        data-src="@Model.FilePath">
+                    <img src="@Model.FilePath" alt="Thumbnail 3" class="thumbnail"
+                        data-src="@Model.FilePath">
+                    <img src="@Model.FilePath" alt="Thumbnail 4" class="thumbnail"
+                        data-src="@Model.FilePath">
+                </div>
+            </div>
+            <div class="col-lg-6 product-details-animation">
+                <div class="mt-4 mt-lg-0">
+
+                    <h1 class="mb-3">@Model.Name</h1>
+                    <p class="text-muted mb-4">@Model.Description</p>
+                    <div class="d-flex align-items-center mb-1">
+                        <div class="rating me-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-muted">(127 değerlendirme)</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="product-price m_price">@Model.Price₺</span>
+                        <span class="old-price ms-3">₺3.299</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="mb-3">Renk</h5>
+                        <div class="mb-3">
+                            <div class="color-btn active" style="background-color: #212529;" data-color="Siyah"></div>
+                            <div class="color-btn" style="background-color: #f8f9fa;" data-color="Beyaz"></div>
+                            <div class="color-btn" style="background-color: #3a86ff;" data-color="Mavi"></div>
+                            <div class="color-btn" style="background-color: #ff006e;" data-color="Pembe"></div>
+                        </div>
+                        <p class="selected-color mb-0">Seçilen renk: <strong>Siyah</strong></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h5 class="mb-3">Adet</h5>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" id="decreaseBtn">-</button>
+                                    <input type="text" class="quantity-input" value="1" id="quantityInput" readonly>
+                                    <button class="quantity-btn" id="increaseBtn">+</button>
+                                </div>
+                            </div>
+
+                            <div class="ms-4">
+                                <h5 class="mb-3">Stok Durumu</h5>
+                                @if (@Model.Stock)
+                                {
+                                    <span class="badge bg-success">Stokta mevcut</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Stokta yok</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <button class="btn btn-add-to-cart btn-animation me-3">
+                            <i class="fas fa-shopping-cart me-2"></i> Sepete Ekle
+                        </button>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center me-4">
+                            <i class="fas fa-truck text-primary me-2"></i>
+                            <span>Ücretsiz kargo</span>
+                        </div>
+                        <div class="d-flex align-items-center me-4">
+                            <i class="fas fa-undo text-primary me-2"></i>
+                            <span>30 gün iade garantisi</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-shield-alt text-primary me-2"></i>
+                            <span>2 yıl garanti</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab">Detaylı Açıklama</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs"
+                            type="button" role="tab">Teknik Özellikler</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab">Değerlendirmeler (127)</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <p>Ultra Hafif Premium Kablosuz Kulaklık X7000, müzik tutkunları için tasarlanmış üstün ses
+                            kalitesi ve konfor sunan premium bir kulaklıktır. Aktif gürültü önleme teknolojisi sayesinde
+                            dış ortam gürültüsünü tamamen engelleyerek sizi müziğin içine çeker.</p>
+
+                        <p>Ergonomik tasarımı sayesinde uzun kullanımlarda bile kulak yorgunluğu yaratmaz. Yumuşak kulak
+                            pedleri ve hafif yapısı ile saatlerce rahatça kullanabilirsiniz. 40 saate varan pil ömrü ile
+                            uzun yolculuklarda bile şarj sorunu yaşamazsınız.</p>
+
+                        <p>Bluetooth 5.2 teknolojisi sayesinde telefonunuz veya diğer cihazlarınızla sorunsuz bağlantı
+                            kurabilir, çift cihaz bağlantısı ile iki farklı cihazı aynı anda kontrol edebilirsiniz.
+                            Dokunmatik kontrol paneli ile müzik geçişleri, ses ayarı ve çağrı yönetimini kolayca
+                            yapabilirsiniz.</p>
+
+                        <p>IPX5 su ve toza dayanıklılık sertifikası ile günlük kullanımda ve spor yaparken güvenle
+                            kullanabilirsiniz. Yüksek kaliteli malzemeler ve dayanıklı yapısı ile uzun yıllar kullanım
+                            ömrü sunar.</p>
+                    </div>
+                    <div class="tab-pane fade" id="specs" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Ses Özellikleri</h5>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Sürücü Boyutu</td>
+                                            <td>40mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Frekans Aralığı</td>
+                                            <td>20Hz - 20kHz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Empedans</td>
+                                            <td>32 Ohm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hassasiyet</td>
+                                            <td>105 dB/mW</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aktif Gürültü Önleme</td>
+                                            <td>Var (30dB'e kadar)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Genel Özellikler</h5>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Bağlantı</td>
+                                            <td>Bluetooth 5.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pil Ömrü</td>
+                                            <td>40 saat (ANC kapalı), 30 saat (ANC açık)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Şarj Süresi</td>
+                                            <td>2 saat (tam şarj)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hızlı Şarj</td>
+                                            <td>10 dakikada 5 saat kullanım</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ağırlık</td>
+                                            <td>250g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Su Dayanıklılık</td>
+                                            <td>IPX5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Kutu İçeriği</h5>
+                                <ul>
+                                    <li>X7000 Kablosuz Kulaklık</li>
+                                    <li>Taşıma Çantası</li>
+                                    <li>USB-C Şarj Kablosu</li>
+                                    <li>3.5mm Aux Kablosu</li>
+                                    <li>Kullanım Kılavuzu</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Desteklenen Kodekler</h5>
+                                <ul>
+                                    <li>SBC</li>
+                                    <li>AAC</li>
+                                    <li>aptX</li>
+                                    <li>aptX HD</li>
+                                    <li>LDAC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="text-center me-4">
+                                <h2 class="mb-0">4.5</h2>
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="mb-0">127 değerlendirme</p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="me-2">5 Yıldız</span>
+                                    <div class="progress flex-grow-1" style="height: 10px;">
+                                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                                    </div>
+                                    <span class="ms-2">75%</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="me-2">4 Yıldız</span>
+                                    <div class="progress flex-grow-1" style="height: 10px;">
+                                        <div class="progress-bar bg-success" style="width: 15%"></div>
+                                    </div>
+                                    <span class="ms-2">15%</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="me-2">3 Yıldız</span>
+                                    <div class="progress flex-grow-1" style="height: 10px;">
+                                        <div class="progress-bar bg-warning" style="width: 6%"></div>
+                                    </div>
+                                    <span class="ms-2">6%</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="me-2">2 Yıldız</span>
+                                    <div class="progress flex-grow-1" style="height: 10px;">
+                                        <div class="progress-bar bg-danger" style="width: 3%"></div>
+                                    </div>
+                                    <span class="ms-2">3%</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="me-2">1 Yıldız</span>
+                                    <div class="progress flex-grow-1" style="height: 10px;">
+                                        <div class="progress-bar bg-danger" style="width: 1%"></div>
+                                    </div>
+                                    <span class="ms-2">1%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-item p-3 mb-4 bg-light rounded">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <h5 class="mb-0">Mehmet Y.</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-muted">2 gün önce</span>
+                            </div>
+                            <p>Uzun süredir kullanıyorum, ses kalitesi gerçekten harika. Gürültü engelleme özelliği
+                                ofiste çalışırken çok işime yarıyor. Pil ömrü de beklediğimden çok daha iyi. Kesinlikle
+                                tavsiye ediyorum!</p>
+                        </div>
+
+                        <div class="review-item p-3 mb-4 bg-light rounded">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <h5 class="mb-0">Ayşe K.</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-muted">1 hafta önce</span>
+                            </div>
+                            <p>Ses kalitesi ve konfor açısından çok memnunum. Hafif olması uzun süreli kullanımlarda
+                                büyük avantaj. Tek eksik yanı uygulama kontrollerinin bazen yavaş çalışması.</p>
+                        </div>
+
+                        <div class="review-item p-3 mb-4 bg-light rounded">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <h5 class="mb-0">Ali S.</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-muted">2 hafta önce</span>
+                            </div>
+                            <p>Bass seviyesi beklediğimden daha iyi. Ancak mikrofonun kalitesi çağrılarda biraz sorun
+                                çıkarabiliyor. Yine de fiyatına göre oldukça iyi bir ürün.</p>
+                        </div>
+
+                        <button class="btn btn-outline-primary">Tüm Değerlendirmeleri Gör</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container product-container py-4 px-4">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="section-title">Ürün Özellikleri</h3>
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.1s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                                <h5>Uzun Pil Ömrü</h5>
+                                <p>40 saate kadar müzik keyfi yaşayın, hızlı şarj özelliği ile 10 dakikada 5 saatlik
+                                    kullanım.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.2s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-volume-mute"></i>
+                                </div>
+                                <h5>Aktif Gürültü Engelleme</h5>
+                                <p>30dB'e kadar dış gürültü engelleme teknolojisi ile saf müzik deneyimi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.3s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <h5>Su ve Toza Dayanıklı</h5>
+                                <p>IPX5 sertifikası ile su sıçramalarına ve toza karşı dayanıklı, spor yaparken
+                                    kullanıma uygun.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.4s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <h5>Bluetooth 5.2</h5>
+                                <p>En yeni Bluetooth teknolojisi ile daha stabil bağlantı ve düşük enerji tüketimi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.5s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h5>Çift Cihaz Bağlantısı</h5>
+                                <p>İki farklı cihaza aynı anda bağlanarak telefon ve bilgisayar arasında geçiş
+                                    yapabilme.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card animated-card" style="animation-delay: 0.6s;">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sliders-h"></i>
+                                </div>
+                                <h5>Kişiselleştirilebilir EQ</h5>
+                                <p>Mobil uygulama ile ses ayarlarını kişiselleştirerek kendi müzik profilinizi
+                                    oluşturun.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="section-title">Benzer Ürünler</h3>
+                    <div class="product-carousel position-relative">
+                        <div class="carousel-control carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="carousel-control carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="row">
+                            @{
+                                var products = (List<Product>)ViewData["SimilarProducts"]!;
+                                foreach (var sp in products)
+                                {
+                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                        <div class="similar-product-card animated-card" style="animation-delay: 0.1s;">
+                                            <div class="position-relative img_auto">
+                                                <img src="@sp.FilePath" alt="Benzer Ürün 1"
+                                                    class="img-fluid similar-product-img w-100" style="margin: 0 auto;">
+                                                <div class="img-overlay"></div>
+                                            </div>
+                                            <div class="card-body position-relative" style="margin-left: 40px;">
+                                                <div class="rating mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <span class="text-muted ms-1">(98)</span>
+                                                </div>
+                                                <a asp-controller="Home" asp-action="Details" asp-route-id="@sp.Id"
+                                                    class="similar-product-title text-decoration-none text-dark">@sp.Name</a>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="similar-product-price me-2 text-dark">₺@sp.Price</span>
+                                                    <span class="similar-product-old-price">₺9.899</span>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <span class="product-tag tag-popular">Popüler</span>
+                                                    <span class="product-tag tag-sale">İndirim</span>
+                                                </div>
+                                                <button class="add-to-cart-btn">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>

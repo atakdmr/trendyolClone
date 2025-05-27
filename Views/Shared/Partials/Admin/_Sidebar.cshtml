@@ -1,0 +1,23 @@
+
+<div class="sidebar pos-abs">
+            <div class="logo">
+                <a asp-controller="Home" asp-action="Index" class="admin-logo">Trendyol</a>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-title">Ana Menü</div>
+                <a class="nav-item text-decoration-none" asp-controller="Admin" asp-action="Index">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="menu-title">Product Management</div>
+                <div class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <a asp-controller="Product" asp-action="Index" class="text-decoration-none text-dark">Ürünler</a>
+                </div>
+                <div class="menu-title">Category Management</div>
+                <div class="nav-item">
+                    <i class="fas fa-tags"></i>
+                    <a asp-controller="Category" asp-action="CategoryList" class="text-decoration-none text-dark">Kategoriler</a>
+                </div>
+            </div>
+        </div>

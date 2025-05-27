@@ -1,0 +1,413 @@
+:root {
+    --trendyol-orange: #f27a1a;
+    --trendyol-light-orange: #ffebde;
+    --trendyol-dark: #333;
+    --trendyol-light: #f8f8f8;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+.navbar {
+    position: sticky !important;
+}
+.navbar-custom {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.search-box {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    width: 100%;
+    max-width: 600px;
+}
+.search-box input:focus {
+    border: 1px solid var(--trendyol-orange) !important;
+    border-radius: 20px;
+}
+.search-box .form-control {
+    border: none;
+    background-color: transparent;
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    color: #777;
+}
+
+.nav-icon {
+    color: var(--trendyol-dark);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.badge-notify {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--trendyol-orange);
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.category-menu {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.category-item {
+    text-align: center;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+.category-item:hover {
+    color: var(--trendyol-orange);
+}
+
+.category-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--trendyol-light-orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px;
+}
+
+.category-icon i {
+    color: var(--trendyol-orange);
+}
+
+.category-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--trendyol-orange);
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-img-container {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e61744;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.product-info {
+    padding: 12px;
+}
+
+.brand-name {
+    display: -webkit-box;           /* WebKit için */
+    display: box;                   /* Standart spec (geçiş aşaması) */
+    -webkit-box-orient: vertical;   /* WebKit için */
+    box-orient: vertical;           /* Standart spec (geçiş aşaması) */
+  
+    -webkit-line-clamp: 2;          /* WebKit ile 2 satır sınırı */
+    line-clamp: 2;                  /* Standart özellik */
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* isteğe bağlı */
+    line-height: 1.3em;
+    max-height: calc(1.3em * 2);
+  }
+  
+  
+
+.product-name {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.rating-count {
+    color: #777;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.current-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.original-price {
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.campaign-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.campaign-card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.campaign-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.campaign-card:hover img {
+    transform: scale(1.03);
+}
+
+.campaign-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+}
+
+.campaign-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campaign-desc {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.brand-slider {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    height: 50px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.brand-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--trendyol-orange);
+}
+
+.app-download {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.app-download img {
+    height: 40px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--trendyol-orange);
+    color: white;
+}
+
+.copyright {
+    background-color: var(--trendyol-light);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+@media (max-width: 767px) {
+    .search-box {
+        margin: 10px 0;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .category-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+.card_text_discount {
+    border-top: 2px solid var(--trendyol-orange);
+    border-bottom: 2px solid var(--trendyol-orange);
+    background-color: rgba(255, 127, 8, 0.123);
+}
+.text-trendyol {
+    color: var(--trendyol-dark);
+    font-weight: 400;
+
+}
+.spor_urunleri {
+    font-family: 'Poppins', sans-serif; /* Modern bir font */
+    font-weight: 600;
+    color: #333;
+    background: linear-gradient(90deg, #ddc438ce, #ff6000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+}
+
+.spor_urunleri .highlight {
+    color: #ff6000;
+    font-weight: bold;
+}
+
+.spor_urunleri .discount {
+    color: #f27a1a;
+    font-weight: bold;
+}
+ 

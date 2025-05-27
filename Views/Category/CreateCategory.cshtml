@@ -1,0 +1,87 @@
+@{
+    ViewData["Title"] = "CreateCategory";
+    Layout = "_Admin";
+}
+@model Category
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol Admin - Kategori Ekleme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/admin/category/createcategory.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="containery mt-5">
+        <div class="category-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="page-title">
+                    <i class="fas fa-folder-plus me-2" style="color: var(--trendyol-orange);"></i>
+                    Yeni Kategori Ekle
+                </h2>
+                <span class="category-status">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Toplam Kategori: <b>248</b>
+                </span>
+            </div>
+
+            <div class="category-info">
+                <i class="fas fa-lightbulb me-2" style="color: var(--trendyol-orange);"></i>
+                Kategoriler, müşterilerinizin ürünlerinizi daha kolay bulmasını sağlar. Anlaşılır isimler kullanın ve
+                benzer ürünleri aynı kategoride gruplandırın.
+            </div>
+
+            <form method="post" asp-controller="Category" asp-action="CreateCategory">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="categoryName" class="form-label">Kategori Adı *</label>
+                            <input type="text" class="form-control" asp-for="CategoryName"
+                                placeholder="Örn: Elektronik, Giyim, Kozmetik" required>
+                            <span asp-validation-for="CategoryName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="categorySlug" class="form-label">Kategori URL *</label>
+                            <div class="input-group">
+                                <span class="input-group-text">trendyol.com/</span>
+                                <input type="text" class="form-control" asp-for="Url" placeholder="elektronik" required>
+                            </div>
+                            <span asp-validation-for="Url" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="categoryIcon" class="form-label">Kategori Icon</label>
+                            <input type="text" asp-for="Icon" class="form-control" id="categoryIcon" placeholder="CAT-001">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-wrapper">
+                    <a type="button" class="btn-outline-secondary text-decoration-none" asp-controller="Category" asp-action="CategoryList">
+                        <i class="fas fa-times"></i> Vazgeç
+                    </a>
+                    <div>
+                        <button type="submit" class="trendyol-btn">
+                            <i class="fas fa-plus-circle"></i> Kategori Ekle
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

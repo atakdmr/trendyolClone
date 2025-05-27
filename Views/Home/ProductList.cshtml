@@ -1,0 +1,76 @@
+@model List<Product>
+    <style>
+        .home_page_404 {
+            color: #f27a21;
+            font-weight: bold;
+            padding: 6px 30px;
+            border: 1px solid #f27a21;
+            border-radius: 5px;
+        }""
+        .home_page_404:hover {
+            background-color: #f27a21;
+            color: white;
+        }
+        .product-card {
+            position: relative;
+            margin-bottom: 30px !important;
+        }
+        .price-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+<section class="mb-5">
+    
+    <div class="row">
+        @if (Model == null || Model.Count == 0)
+        {
+            <div class="col-12 text-center">
+                <h2 class="text-danger mb-4">Ürün Bulunamadı | 404 Error</h2>
+                <a asp-controller="Home" asp-action="Index" class="fs-4 home_page_404">Ana Sayfaya Dön</a>
+            </div>
+        }
+        @if (Model != null && Model.Count > 0)
+        {
+            <h2 class="section-title">Sana Özel Fırsatlar</h2>
+            foreach (var p in Model)
+            {
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="@p.FilePath" alt="Ürün 1" class="product-img">
+                            <button class="favorite-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="discount-badge">%40</div>
+                        </div>
+                        <div class="product-info">
+                            <a asp-controller="Home" asp-action="Details" asp-route-id="@p.Id"
+                                class="brand-name fs-3 text-decoration-none text-dark">@p.Name</a>
+                            <div class="product-name">@p.Description</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-count">(423)</span>
+                            </div>
+                            <div class="price-container">
+                                <div class="current-price">@p.Price₺</div>
+                                <div class="original-price">1.169 TL</div>
+                                <button class="add-to-cart-button ms-4" style="background-color: #ff6000; color: white; border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+
+
+
+    </div>
+</section>

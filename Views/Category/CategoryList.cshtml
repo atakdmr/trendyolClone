@@ -1,0 +1,145 @@
+@{
+    Layout = "_Admin";
+}
+@model List<Category>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Kategoriler</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/admin/table.css">
+    <link rel="stylesheet" href="~/css/admin/category/categorylist.css">
+    <style>
+        .breadcrumb {
+            margin-left: 250px !important;
+        }
+
+        @@media(max-width:768px) {
+            .breadcrumb {
+                margin-left: 0px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fs-5">
+            <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index"
+                    class="text-decoration-none text-trendyol ms-3">Admin</a></li>
+            <li class="breadcrumb-item active">Category</li>
+        </ol>
+    </nav>
+    <div class="container_table_2 my-4 row">
+        <h2 class="header-title">Categories</h2>
+        <div class="row mb-4 align-items-center justify-content-between">
+            <div class="col-lg-4 col-md-12 mb-3">
+                <a asp-controller="Category" asp-action="CreateCategory" class="btn btn-primary add-new-btn w-100">
+                    <i class="fas fa-plus-circle me-2"></i>New Category
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-3">
+                <select class="form-select w-100">
+                    <option value="10">10 Save</option>
+                    <option value="25">25 Save</option>
+                    <option value="50">50 Save</option>
+                    <option value="100">100 Save</option>
+                </select>
+            </div>
+            <div class="search-box d-flex col-lg-12 mb-3">
+                <form asp-controller="Category" asp-action="CategoryList" method="get" class="d-flex w-100">
+                    <input type="text" class="form-control" name="q" id="searchInput"
+                        placeholder="Search in categories">
+                    <button class="btn-add-to-cart">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="card category-table">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        <span class="text-muted"><span class="text-trendyol">Total: </span> <strong>5
+                                categories</strong></span>
+                    </div>
+                    <div class="col-6 text-end">
+                        <span class="text-muted"><span class="text-trendyol">Last Update: </span><strong>13 October
+                                2025</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" style="width: 60px">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col" class="url-column">URL</th>
+                                <th scope="col" class="count-column">Product Count</th>
+                                <th scope="col" class="icon-column">Icon</th>
+                                <th scope="col" class="text-end actions-column">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var category in Model)
+                            {
+                                <tr>
+                                    <td>@category.Id</td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <a class="category-name"
+                                                href="/products/@category.Url">@category.CategoryName</a>
+                                        </div>
+                                    </td>
+                                    <td class="url-column">/@category.Url</td>
+                                    <td class="count-column"><span class="badge-count">@category.ProductCount</span></td>
+                                    <td class="icon-column">
+                                        <div class="cat-icon">
+                                            <i class="@category.Icon"></i>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <a class="btn btn-edit action-btn" asp-controller="Category" asp-action="Details"
+                                            asp-route-id="@category.Id">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        @if (category.ProductCount == 0)
+                                        {
+                                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id"
+                                                class="btn btn-delete action-btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add hover effects for category icons
+        document.querySelectorAll('.cat-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function () {
+                this.classList.add('hovered');
+            });
+
+            icon.addEventListener('mouseleave', function () {
+                this.classList.remove('hovered');
+            });
+        });
+    </script>
+</body>
+
+</html>

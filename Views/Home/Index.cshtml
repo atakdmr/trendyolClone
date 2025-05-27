@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Trending Collections -->
+@await Html.PartialAsync("Partials/MainSite/_TrendingCollections3")
+
+<!-- Flash Deals -->
+@await Html.PartialAsync("Partials/MainSite/_FlashDealsProducts")
+
+<!-- Campaigns -->
+@await Html.PartialAsync("Partials/MainSite/_Campaigns")
+
+<!-- Trending Products -->
+@await Html.PartialAsync("Partials/MainSite/_FlashDealsProducts", ViewData["Stock"])
+
+<!-- Trending Brands -->
+@await Html.PartialAsync("Partials/MainSite/_TrendingBrands")
+
+<!-- Trending Categories -->
+@await Html.PartialAsync("Partials/MainSite/_FlashDealsProducts",ViewData["ShowEverything"])
+
+<!-- Trending Collections -->
+@await Html.PartialAsync("Partials/MainSite/_TrendingCollections")
